@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/serchview_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    >
+
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:iconifiedByDefault="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/serchview_bg"
+        app:queryHint="请告诉JE酱~你又想要什么奇怪的谱子Ծ‸Ծ"
+        android:elevation="3dp"
+
+        />
+
+    <zlc.season.practicalrecyclerview.PracticalRecyclerView
+        android:id="@+id/recycler"
+        android:layout_marginTop="20dp"
+        android:elevation="5dp"
+        android:background="@drawable/serchview_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:loading_layout="@layout/list_loding"
+        app:empty_layout="@layout/empty_layout"
+        app:error_layout="@layout/error_layout"
+        app:load_more_layout="@layout/load_more_layout"
+        app:no_more_layout="@layout/no_more_layout"
+        app:load_more_failed_layout="@layout/load_more_failed_layout"
+        />
+</LinearLayout>

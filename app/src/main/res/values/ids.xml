@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 公共的id 一个是中间的title 一个是返回按键-->
+    <item name="tv_title" type="id"/>
+    <item name="iv_back" type="id"/>
+
+
+</resources>
